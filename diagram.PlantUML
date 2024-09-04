@@ -1,0 +1,79 @@
+@startuml "nomina"
+
+class Employee {
+  -String DNI;
+  -String nombre;
+  -String apellidos;
+  -String teléfono;
+  -String dirección;
+  -String númeroCuentaCorriente;
+  -List<Contrato> listContrato;
+  -List<Nomina> listNomina;
+  -List<Cargo> listCargo;
+}
+
+class Contrac{
+  -Date datehigh;
+  -Date dateLow;
+  -String category;
+  -String positionDestination;
+  -Float salaryBase;
+  -Employee employee;
+  -List<Complement>listComplemet;
+  -List<Triennium> listTriennium;
+}
+
+class Complement{
+    -String description;
+    -Float amount;
+    -String type;
+}
+
+class Triennium{
+    -Date dateBennging;
+    -Float amount;
+    -String categoryAssociated;
+}
+
+class Position{
+    -String namePosition;
+    -Date dateBenning;
+    -Date dateEnd;
+    -Float amount;
+}
+
+class Deduction{
+    -String description;
+    -Float percentageFijo;
+    -List<Section> sectionsList;
+}
+
+class Section{
+    -FLoat limitLower;
+    -Float limitUpper;
+    -Float percentage;
+}
+
+class Paysheet{
+    -Date dateEmission;
+    -Float amountGross;
+    -Float amountNet;
+    -List<Perception> listPerception;
+    -List<Deduction> listDeduction;
+}
+
+class Perception{
+    -String description;
+    -Float amount;
+}
+
+Employee "1" -- "0..*" Contrac : tiene >
+Employee "1" -- "0..*" Paysheet : genera >
+Contrac "1" -- "0..*" Complement : incluye >
+Contrac "1" -- "0..*" Triennium : acumula >
+Employee "1" -- "0..*" Position : ocupa >
+Paysheet "1" -- "0..*" Perception : incluye >
+Paysheet "1"  -- "0..*" Deduction : incluye >
+Deduction "0..1" -- "0..*" Section : tiene >
+
+@enduml

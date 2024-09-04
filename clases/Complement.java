@@ -28,4 +28,5 @@ public class Complement {
     public void setType(String type) {
         this.type = type;
     }
+    
 }
