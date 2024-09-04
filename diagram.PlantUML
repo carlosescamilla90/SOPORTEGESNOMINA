@@ -49,7 +49,7 @@ class Deduction{
 }
 
 class Section{
-    -FLoat limitLower;
+    -Float limitLower;
     -Float limitUpper;
     -Float percentage;
 }
