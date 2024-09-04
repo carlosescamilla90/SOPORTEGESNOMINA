@@ -25,7 +25,7 @@ class Contrac{
 
 class Complement{
     -String description;
-    -Float amount;
+    -Float amount; "importe"
     -String type;
 }
 
