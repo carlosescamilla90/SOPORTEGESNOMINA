@@ -1,5 +1,6 @@
 package clases;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -21,8 +22,8 @@ public class Contrac {
         DestinationPosition = destinationPosition;
         this.baseSalary = baseSalary;
         this.employee = employee;
-        this.listComplement = listComplement;
-        this.listTriennium = listTriennium;
+        this.listComplement = new ArrayList<>();
+        this.listTriennium = new ArrayList<>();
     }
     public Date getDateHigh() {
         return dateHigh;

@@ -1,5 +1,6 @@
 package clases;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Deduction {
@@ -10,7 +11,7 @@ public class Deduction {
     public Deduction(String description, Float percentageFijo, List<Section> sectionsList) {
         this.description = description;
         this.percentageFijo = percentageFijo;
-        this.sectionsList = sectionsList;
+        this.sectionsList = new ArrayList<>();
     }
     public String getDescription() {
         return description;

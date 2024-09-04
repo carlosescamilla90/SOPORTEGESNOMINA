@@ -10,7 +10,7 @@ public class Employee {
     private String telephoneNumber;
     private String address;
     private String accountNumberBank;
-    private List<Contrac> listContrato;
+    private List<Contrac> listContrac;
     private List <Paysheet> listPaysheet;
     private List <Position> listPosition;
         
@@ -22,7 +22,7 @@ public class Employee {
         this.telephoneNumber = telephoneNumber;
         this.address = address;
         this.accountNumberBank = accountNumberBank;
-        this.listContrato = new ArrayList<>();
+        this.listContrac = new ArrayList<>();
         this.listPaysheet = new ArrayList<>();
         this.listPosition = new ArrayList<>();
     }
@@ -63,11 +63,11 @@ public class Employee {
     public void setAccountNumberBank(String accountNumberBank) {
         this.accountNumberBank = accountNumberBank;
     }
-    public List<Contrac> getListContrato() {
-        return listContrato;
+    public List<Contrac> getlistContrac() {
+        return listContrac;
     }
-    public void setListContrato(List<Contrac> listContrato) {
-        this.listContrato = listContrato;
+    public void setlistContrac(List<Contrac> listContrac) {
+        this.listContrac = listContrac;
     }
     public List<Paysheet> getListPaysheet() {
         return listPaysheet;
