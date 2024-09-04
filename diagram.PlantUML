@@ -2,14 +2,14 @@
 
 class Employee {
   -String DNI;
-  -String nombre;
-  -String apellidos;
-  -String teléfono;
-  -String dirección;
-  -String númeroCuentaCorriente;
-  -List<Contrato> listContrato;
-  -List<Nomina> listNomina;
-  -List<Cargo> listCargo;
+  -String name;
+  -String lastName;
+  -String telephoneNumber;
+  -String address;
+  -String accountNumberBank;
+  -List<Contrac> listContrac;
+  -List<Paysheet> listPaysheet;
+  -List<Position> listPosition;
 }
 
 class Contrac{
