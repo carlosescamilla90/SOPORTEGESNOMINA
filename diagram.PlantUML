@@ -67,13 +67,12 @@ class Perception{
     -Float amount;
 }
 
-Employee "1" -- "0..*" Contrac : tiene >
-Employee "1" -- "0..*" Paysheet : genera >
-Contrac "1" -- "0..*" Complement : incluye >
-Contrac "1" -- "0..*" Triennium : acumula >
-Employee "1" -- "0..*" Position : ocupa >
-Paysheet "1" -- "0..*" Perception : incluye >
-Paysheet "1"  -- "0..*" Deduction : incluye >
-Deduction "0..1" -- "0..*" Section : tiene >
-
+Employee "1" -- "*" Contrac : tiene >
+Employee "1" -- "*" Paysheet : genera >
+Contrac "1" -- "*" Complement : incluye >
+Contrac "1" -- "*" Triennium : acumula >
+Employee "1" -- "*" Position : ocupa >
+Paysheet "1" -- "*" Perception : incluye >
+Paysheet "1"  -- "*" Deduction : incluye >
+Deduction "1" -- "*" Section : tiene >
 @enduml
