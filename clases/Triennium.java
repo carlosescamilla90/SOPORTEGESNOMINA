@@ -6,6 +6,10 @@ public class Triennium {
     private Date dateBenning;
     private Float amount;
     private String categoryAssociated;
+
+    public Triennium(){
+        
+    }
     
     public Triennium(Date dateBenning, Float amount, String categoryAssociated) {
         this.dateBenning = dateBenning;

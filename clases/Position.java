@@ -7,6 +7,10 @@ public class Position {
     private Date dateBeginning;
     private Date dateEnd;
     private Float amount;
+
+    public Position(){
+        
+    }
     
     public Position(String namePosition, Date dateBeginning, Date dateEnd, Float amount) {
         this.namePosition = namePosition;

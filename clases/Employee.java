@@ -13,6 +13,10 @@ public class Employee {
     private List<Contrac> listContrac;
     private List <Paysheet> listPaysheet;
     private List <Position> listPosition;
+
+    public Employee(){
+        
+    }
         
     public Employee(String dni, String name, String lastName, String telephoneNumber, String address,
             String accountNumberBank) {

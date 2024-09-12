@@ -11,6 +11,10 @@ public class Paysheet {
     private List<Perception> listPerception;
     private List<Deduction> listDeduction;
 
+    public Paysheet(){
+        
+    }
+
     public Paysheet(Date dateEmission, Float amountGross, Float amountNet, List<Perception> listPerception,
             List<Deduction> listDeduction) {
         this.dateEmission = dateEmission;

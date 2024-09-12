@@ -5,6 +5,9 @@ public class Complement {
     private Float amount;
     private String type;
     
+    public Complement(){
+        
+    }
     public Complement(String description, Float amount, String type) {
         this.description = description;
         this.amount = amount;

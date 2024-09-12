@@ -14,6 +14,10 @@ public class Contrac {
     private List<Complement> listComplement;
     private List<Triennium> listTriennium;
     
+    public Contrac(){
+
+    }
+    
     public Contrac(Date dateHigh, Date dateLow, String category, String destinationPosition, Float baseSalary,
             Employee employee, List<Complement> listComplement, List<Triennium> listTriennium) {
         this.dateHigh = dateHigh;

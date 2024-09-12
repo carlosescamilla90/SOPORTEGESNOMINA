@@ -4,6 +4,10 @@ public class Section {
     private Float limitLower;
     private Float limitUpper;
     private Float Percentage;
+
+    public Section(){
+        
+    }
     
     public Section(Float limitLower, Float limitUpper, Float percentage) {
         this.limitLower = limitLower;

@@ -4,6 +4,10 @@ public class Perception {
     private String description;
     private Float amount;
     
+    public Perception(){
+
+    }
+    
     public Perception(String description, Float amount) {
         this.description = description;
         this.amount = amount;

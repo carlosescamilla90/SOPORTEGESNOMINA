@@ -7,6 +7,10 @@ public class Deduction {
     private String description;
     private Float percentageFijo;
     private List<Section> sectionsList;
+
+    public Deduction(){
+        
+    }
     
     public Deduction(String description, Float percentageFijo, List<Section> sectionsList) {
         this.description = description;
